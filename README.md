@@ -18,11 +18,16 @@ This is a React-based iPod Shuffle project that mimics the functionality of the 
 - **CSS**: Styling for UI components.
 - **ZingTouch**: For handling touch and gesture-based controls.
 
+## Hosted Link
+
+You can access the live version of the app here:
+[Hosted iPod Shuffle App](https://ipod-shuffle.netlify.app/)
+
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ajit3643/iPod.git
+   git clone https://github.com/your-username/ipod-shuffle.git
    ```
 2. Navigate to the project directory:
    ```bash
