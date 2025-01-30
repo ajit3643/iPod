@@ -1,8 +1,8 @@
 /* music container */
 .music {
-  width: 280px;
-  height: 210px;
-  background-color: #e3f2fd;
+  width: auto;
+  height: 190px;
+  color: white;
 }
 
 /* heading for music */

@@ -1,6 +1,6 @@
 /* container div */
 .now-playing-container {
-  width: 280px;
+  width: auto;
   height: 190px;
   background-color: #e3f2fd;
 }

@@ -2,7 +2,7 @@
   background-size: cover;
   background-position: center;
   width: 280px;
-  height: 210px;
+  height: auto;
   margin-top: 25px;
   border: 1px solid black;
   padding: 3px;
@@ -16,8 +16,8 @@
 }
 
 .blank-div {
-  width: 270px;
-  height: 200px;
+  width: auto;
+  height: 190px;
   background-color: #e3f2fd;
   display: flex;
   justify-content: center;

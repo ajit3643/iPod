@@ -9,6 +9,7 @@ import Case from "./Components/Case.js";
 import song1 from "./static/Songs/Do-You-Know.mp3";
 import song2 from "./static/Songs/HassHass.mp3";
 import song3 from "./static/Songs/Love-Ya.mp3";
+import song4 from "./static/Songs/Alan-Walker-Faded.mp3";
 import song5 from "./static/Songs/Unstoppable.mp3";
 import song6 from "./static/Songs/Yimmy Yimmy.mp3";
 import song7 from "./static/Songs/Zoobi Doobi.mp3";
@@ -19,6 +20,7 @@ import song9 from "./static/Songs/Give Me Some Sunshine.mp3";
 import song1Img from "./static/Diljit-Dosanjh.jpg";
 import song2Img from "./static/Hass-Hass.jpg";
 import song3Img from "./static/Love-Ya.jpg";
+import song4Img from "./static/Guitar.jpg";
 import song5Img from "./static/Unstoppable.jpg";
 import song6Img from "./static/Yimmy Yimmy.jpg";
 import song7Img from "./static/3Idiots.jpg";
@@ -38,11 +40,22 @@ class App extends React.Component {
       active: 0, //Active list item
       menuItems: ["Now Playing", "Music", "Games", "Settings"], //menu Items
       musicItems: ["All Songs", "Artist", "Albums"], //Items in music
-      songItemsUrl: [song1, song2, song3, song5, song6, song7, song8, song9], //songs list
+      songItemsUrl: [
+        song1,
+        song2,
+        song3,
+        song4,
+        song5,
+        song6,
+        song7,
+        song8,
+        song9,
+      ], //songs list
       songImgItemsUrl: [
         song1Img,
         song2Img,
         song3Img,
+        song4Img,
         song5Img,
         song6Img,
         song7Img,
@@ -54,6 +67,7 @@ class App extends React.Component {
         "Do You Know",
         "Hass Hass",
         "Love Ya",
+        "Faded",
         "Unstoppable",
         "Yimmy Yimmy",
         "Zoobi Doobi",
@@ -61,13 +75,13 @@ class App extends React.Component {
         "Give Me Some Sunshine",
       ], //song names
       songIndex: 0, //current song
-      lengthMenuKey: { "-1": 3, 1: 2, 4: 7, 8: 4, 3: 2, 9: 3, 10: 4 }, //length of a particular menu
+      lengthMenuKey: { "-1": 3, 1: 2, 4: 8, 8: 4, 3: 2, 9: 3, 10: 4 }, //length of a particular menu
       menuMapping: {
         "-1": [0, 1, 2, 3],
         1: [4, 5, 6],
         3: [8, 9, 10],
         10: [0, 1, 2, 3],
-        4: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+        4: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
       }, //which menu can be rendered by key menu
       currentMenu: -2, //current menu which is lockscreen initially
       navigationStack: [], //Used for navigation forward and backward
