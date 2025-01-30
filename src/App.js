@@ -6,8 +6,9 @@ import "./CSS/App.css";
 import Case from "./Components/Case.js";
 
 // Import songs
-// import song1 from "./static/Songs/Do-You-Know.mp3";
+import song1 from "./static/Songs/Do-You-Know.mp3";
 import song2 from "./static/Songs/HassHass.mp3";
+import song3 from "./static/Songs/Love-Ya.mp3";
 import song5 from "./static/Songs/Unstoppable.mp3";
 import song6 from "./static/Songs/Yimmy Yimmy.mp3";
 import song7 from "./static/Songs/Zoobi Doobi.mp3";
@@ -15,8 +16,9 @@ import song8 from "./static/Songs/Behti Hawa Sa Tha Woh.mp3";
 import song9 from "./static/Songs/Give Me Some Sunshine.mp3";
 
 // Import song cover images
-// import song1Img from "./static/Diljit-Dosanjh.jpg";
+import song1Img from "./static/Diljit-Dosanjh.jpg";
 import song2Img from "./static/Hass-Hass.jpg";
+import song3Img from "./static/Love-Ya.jpg";
 import song5Img from "./static/Unstoppable.jpg";
 import song6Img from "./static/Yimmy Yimmy.jpg";
 import song7Img from "./static/3Idiots.jpg";
@@ -36,9 +38,11 @@ class App extends React.Component {
       active: 0, //Active list item
       menuItems: ["Now Playing", "Music", "Games", "Settings"], //menu Items
       musicItems: ["All Songs", "Artist", "Albums"], //Items in music
-      songItemsUrl: [song2, song5, song6, song7, song8, song9], //songs list
+      songItemsUrl: [song1, song2, song3, song5, song6, song7, song8, song9], //songs list
       songImgItemsUrl: [
+        song1Img,
         song2Img,
+        song3Img,
         song5Img,
         song6Img,
         song7Img,
@@ -47,7 +51,9 @@ class App extends React.Component {
       ], //song images list
       wallpaperItems: [ThomasKelley, Guitar, TeaMusic, FrontScreen], //wallpapers
       songItems: [
+        "Do You Know",
         "Hass Hass",
+        "Love Ya",
         "Unstoppable",
         "Yimmy Yimmy",
         "Zoobi Doobi",
@@ -55,21 +61,21 @@ class App extends React.Component {
         "Give Me Some Sunshine",
       ], //song names
       songIndex: 0, //current song
-      lengthMenuKey: { "-1": 3, 1: 2, 4: 5, 8: 4, 3: 2, 9: 3, 10: 4 }, //length of a particular menu
+      lengthMenuKey: { "-1": 3, 1: 2, 4: 7, 8: 4, 3: 2, 9: 3, 10: 4 }, //length of a particular menu
       menuMapping: {
         "-1": [0, 1, 2, 3],
         1: [4, 5, 6],
         3: [8, 9, 10],
         10: [0, 1, 2, 3],
-        4: [0, 1, 2, 3, 4, 5, 6],
+        4: [0, 1, 2, 3, 4, 5, 6, 7, 8],
       }, //which menu can be rendered by key menu
       currentMenu: -2, //current menu which is lockscreen initially
       navigationStack: [], //Used for navigation forward and backward
-      songUrl: song2, //current song url
+      songUrl: song1, //current song url
       playing: false, //playing or not
       theme: "rgb(210, 210, 210)", //current body theme
       audio: new Audio(song2), //current audio file
-      songImgUrl: song2Img, //current song img for now playing
+      songImgUrl: song1Img, //current song img for now playing
       wheelColor: "white", //current wheel color
       wallpaper: 0, //current wallpaper
       noty: false, // has to show notification or not
